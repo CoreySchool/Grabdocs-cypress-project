@@ -213,10 +213,10 @@ describe('GrabDocs Official Test Suite - Melodii', () => {
     cy.get('button[data-kebab-button="true"]').first().click({ force: true });
     cy.wait(3000);
 
-    cy.contains('Delete').click({ force: true }); // Swapped Download for Delete
+    cy.contains('Delete').click({ force: true }); 
     cy.wait(3000);
 
-    cy.on('window:confirm', () => true); // Handle final confirmation popup
+    cy.on('window:confirm', () => true); 
   });
 
 });
